@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aehanoidz123.librarymanagement.Controllers.WebcamController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="900.0">
+         <children>
+            <Button fx:id="startWebcamBtn" layoutX="300.0" layoutY="606.0" mnemonicParsing="false" onAction="#startWebcam" prefHeight="40.0" prefWidth="130.0" style="-fx-font-size: 16px;" styleClass="get" text="Start camera" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="474.0" />
+            <ImageView fx:id="imageHolder" fitHeight="480.0" fitWidth="640.0" layoutX="159.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="textarea" layoutX="271.0" layoutY="47.0" prefHeight="20.0" prefWidth="154.0" styleClass="detail-label" text="Choose camera source:" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="475.0" />
+            <ComboBox fx:id="chooseWebcams" layoutX="436.0" layoutY="43.0" prefHeight="25.0" prefWidth="328.0" styleClass="detail-input" AnchorPane.rightAnchor="136.0" />
+            <Button fx:id="stopWebcamBtn" layoutX="504.0" layoutY="611.0" mnemonicParsing="false" onAction="#stopWebcam" prefHeight="40.0" prefWidth="130.0" style="-fx-font-size: 16px;" styleClass="get" text="Stop camera" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="300.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="studentInfoPane" prefHeight="498.0" prefWidth="668.0">
+         <children>
+            <AnchorPane layoutX="200.0" layoutY="195.0" prefHeight="260.0" prefWidth="500.0" styleClass="nav" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+               <children>
+                  <Label layoutX="190.0" layoutY="22.0" styleClass="detail-label" text="Student details" />
+                  <StackPane layoutX="33.0" layoutY="82.0" prefHeight="148.0" prefWidth="150.0" AnchorPane.leftAnchor="33.0">
+                     <children>
+                        <ImageView fitHeight="148.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/student_icon-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <Label layoutX="190.0" layoutY="62.0" styleClass="detail-label" text="Student id:" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="70.0" />
+                  <Label fx:id="studentIdLabel" layoutX="269.0" layoutY="70.0" prefHeight="14.0" prefWidth="184.0" styleClass="detail-label" text="24020043" AnchorPane.topAnchor="70.0" />
+                  <Label layoutX="200.0" layoutY="80.0" styleClass="detail-label" text="Student name:" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="100.0" />
+                  <Label fx:id="studentNameLabel" layoutX="293.0" layoutY="100.0" prefHeight="20.0" prefWidth="184.0" styleClass="detail-label" text="Pham Phuc Binh" />
+                  <Label layoutX="200.0" layoutY="110.0" styleClass="detail-label" text="Student phone:" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="130.0" />
+                  <Label fx:id="studentPhoneLabel" layoutX="302.0" layoutY="130.0" prefHeight="11.0" prefWidth="184.0" styleClass="detail-label" text="0866194010" />
+                  <Label layoutX="200.0" layoutY="140.0" styleClass="detail-label" text="Student email:" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="160.0" />
+                  <Label fx:id="studentEmailLabel" layoutX="293.0" layoutY="160.0" prefHeight="11.0" prefWidth="178.0" styleClass="detail-label" text="24020043@vnu.edu.vn" />
+                  <Button layoutX="247.0" layoutY="215.0" mnemonicParsing="false" onAction="#confirm" prefHeight="30.0" prefWidth="73.0" styleClass="get" text="OK" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

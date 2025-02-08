@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aehanoidz123.librarymanagement.Controllers.SuggestViewController">
+   <children>
+      <Label layoutX="185.0" layoutY="14.0" text="Suggested Book For Student:" />
+      <Label fx:id="studentName" alignment="CENTER" layoutX="161.0" layoutY="41.0" prefHeight="27.0" prefWidth="231.0" text="Student" />
+      <TableView fx:id="suggestTable" layoutX="57.0" layoutY="122.0" prefHeight="216.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="categoryColumn" prefWidth="99.0" text="Category" />
+          <TableColumn fx:id="bookColumn" prefWidth="404.0" text="Book" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

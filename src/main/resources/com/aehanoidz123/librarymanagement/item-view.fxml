@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="316.0" prefWidth="175.0" styleClass="pane"
+            stylesheets="@css/itemStyle.css" xmlns="http://javafx.com/javafx/23"
+            fx:controller="com.aehanoidz123.librarymanagement.Controllers.ItemController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@css/itemStyle.css">
+            <children>
+                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="pane" stylesheets="@css/itemStyle.css">
+                    <children>
+                        <ImageView id="bookImageView " fx:id="imageView" fitHeight="262.0" fitWidth="177.0"
+                                   pickOnBounds="true" preserveRatio="true" styleClass="image">
+                            <image>
+                                <Image url="@images/Phantasma.jpg"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </StackPane>
+            </children>
+        </AnchorPane>
+        <Label id="bookNameLabel " fx:id="nameLabel" alignment="CENTER" layoutX="10.0" layoutY="270.0" styleClass="name"
+               stylesheets="@css/itemStyle.css" text="Phantasma" AnchorPane.leftAnchor="10.0"
+               AnchorPane.rightAnchor="10.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

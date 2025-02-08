@@ -1,0 +1,21 @@
+.root {
+    -fx-font-family: 'Roboto';
+}
+
+.name {
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+
+.pane {
+    -fx-background-color: linear-gradient(to right, #74ebd5, #acb6e5);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0, 0, 4);
+}
+
+.image {
+    -fx-cursor: hand;
+}

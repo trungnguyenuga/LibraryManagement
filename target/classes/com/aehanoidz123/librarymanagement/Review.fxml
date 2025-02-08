@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="326.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aehanoidz123.librarymanagement.Controllers.ReviewController">
+   <children>
+      <Label layoutX="157.0" layoutY="23.0" text="Book Review">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="76.0" prefHeight="71.0" prefWidth="91.0" styleClass="detail-label" text="Guest Rating:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="ratingbutton" layoutX="190.0" layoutY="97.0" mnemonicParsing="false" styleClass="get" text="Rate">
+         <items>
+            <MenuItem fx:id="terribleItm" mnemonicParsing="false" text="Terrible" />
+            <MenuItem fx:id="dislikeItm" mnemonicParsing="false" text="Dislike" />
+            <MenuItem fx:id="normalItm" mnemonicParsing="false" text="Normal" />
+            <MenuItem fx:id="likeItm" mnemonicParsing="false" text="Like It" />
+            <MenuItem fx:id="loveItm" mnemonicParsing="false" text="Love It" />
+         </items>
+      </MenuButton>
+      <Label layoutX="76.0" layoutY="112.0" prefHeight="71.0" prefWidth="184.0" styleClass="detail-label" text="Guest Comment:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="commentTXT" layoutX="190.0" layoutY="136.0" prefHeight="95.0" prefWidth="285.0" promptText="Book review" />
+      <Button fx:id="submitBtn" layoutX="230.0" layoutY="251.0" mnemonicParsing="false" styleClass="get" text="Submit" />
+   </children>
+</AnchorPane>
