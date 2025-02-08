@@ -1,4 +1,4 @@
-# LibraryManagement
+# Library Management
  Our library management app makes organizing books, tracking loans, and managing members super easy. No more messy records—just smooth, hassle-free library management!
  TEAM MEMBER
 Trung Nguyen
