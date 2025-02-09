@@ -19,6 +19,9 @@ JavaFX Framwork\
 \
  **HOW TO OPEN THE APP**\
 Install the latest JDK version.\
-Open the app in out\artifacts\LibraryManagement_jar2
+Open the app in out\artifacts\LibraryManagement_jar2\
+Enter username and password:\
+Username: admin\
+Password: admin
 
 
